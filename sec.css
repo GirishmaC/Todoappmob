@@ -1,0 +1,235 @@
+html {
+  font-family: 'Times New Roman', Times, serif
+}
+
+@media screen and (min-width: 1000px) {
+
+  .container-2-tablet,
+  #popup-tablet,
+  .mobile {
+    display: none;
+  }
+
+  .container-2 {
+    margin: 60px 90px;
+    padding: 30px;
+    display: flexbox;
+    flex-flow: column;
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+
+  #header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10em;
+  }
+
+  #header::before,
+  #header::after {
+    content: "";
+    border-top: 1px solid;
+    margin-right: 20px;
+    margin-left: 30px;
+    flex: 1 0 auto;
+  }
+
+
+  #header::after {
+    margin-right: 2em;
+  }
+
+  #title {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+
+  #back-button {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  #back {
+    font-size: 25px;
+    padding-left: 10px;
+  }
+
+  #back:hover {
+    text-shadow: 0 0 10px #cacbcc;
+  }
+
+  #back-arrow a {
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  #back-arrow a:visited {
+    color: grey;
+  }
+
+  #boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box {
+    width: 320px;
+    height: 300px;
+    margin: 30px;
+    border: 1px solid crimson;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 10px ghostwhite;
+  }
+
+  .box:hover {
+    box-shadow: 0 0 10px gainsboro;
+  }
+
+  .title {
+    display: block;
+    margin-top: 25px;
+    color: rgb(139, 15, 15);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .box-hr {
+    position: relative;
+    left: 3.2em;
+    width: 13.2em;
+  }
+
+  .crossedtext {
+    color: red;
+    font-size: 20px;
+    text-decoration: line-through;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #tasks {
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  form {
+    display: flex;
+    margin-left: 4em;
+  }
+
+  input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+  }
+
+  label {
+    padding-top: 2px;
+    padding-left: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .add-button {
+    margin-top: 6em;
+    margin-left: 15em;
+  }
+
+  #popup {
+    background: rgba(244, 244, 244, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+  #popup-window {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 22em;
+    height: fit-content;
+    text-align: center;
+    border: 1px solid crimson;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 10px whitesmoke;
+    color: blue;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    padding: 1px;
+    background: white;
+    filter: blur(0);
+  }
+
+  #popup:target {
+    display: block;
+  }
+
+  .blur {
+    backdrop-filter: blur(10px);
+  }
+
+  #add {
+    margin: 25px 0 8px 0;
+    color: tomato;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .close:hover {
+    background: tomato;
+  }
+
+  input[type="text"] {
+    margin: 15px;
+    width: 70%;
+    padding: 8px;
+    line-height: 6px;
+    border: 1.2px solid tomato;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    box-shadow: 1px 1px 5px grey;
+  }
+
+  input[type="text"]:focus {
+    border: 1.5px solid tomato;
+  }
+
+  .close {
+    display: inline-block;
+    border: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    padding: 5px 20px;
+    margin: 0.5em;
+    cursor: pointer;
+    margin-bottom: 1.5em;
+    text-decoration: none;
+    background: #e74c3c;
+    font-size: 14pt;
+  }
+
+}

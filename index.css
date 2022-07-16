@@ -1,0 +1,233 @@
+html {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+@media screen and (min-width: 1000px) {
+
+  .mobile,
+  .tablet {
+    display: none;
+  }
+
+  body {
+    margin: 0;
+    background-color: #eaedeb;
+  }
+
+  .container {
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 60px 80px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px gainsboro;
+  }
+
+  @media screen and (min-height: 900px) {
+    .container {
+      margin: 25vh;
+    }
+  }
+
+  #header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #indexone {
+    font-size: 50px;
+    padding-right: 4em;
+    position: relative;
+    right: 30px;
+  }
+
+  .tasks {
+    color: black;
+  }
+
+  .lists {
+    font-weight: 500;
+    color: cadetblue;
+  }
+
+  #indextwo {
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+  }
+
+  #indextwo a {
+    color: black;
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+
+  #list {
+    padding-left: 10px;
+    font-size: 25px;
+  }
+
+  #list:hover {
+    text-shadow: 0 0 10px whitesmoke;
+  }
+
+  #boxes {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box {
+    width: 190px;
+    height: 300px;
+    margin: 30px;
+    border: 2px solid crimson;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 10px #dfe4e5;
+  }
+
+  .box:hover {
+    box-shadow: 0 0 10px #dfe4e5;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(224, 9, 9);
+  }
+
+  .title {
+    display: block;
+    margin-top: 25px;
+    color: rgb(205, 11, 11);
+    font-size: 20px;
+  }
+
+  .box-hr {
+    position: relative;
+    left: 20px;
+    width: 9em;
+    z-index: 0;
+  }
+
+  .crossedtext {
+    color: red;
+    font-size: 20px;
+    text-decoration: line-through;
+    position: relative;
+    float: right;
+    padding-right: 10px;
+    z-index: 0;
+  }
+
+  input {
+    float: left;
+    font-size: 20px;
+  }
+
+  label {
+    float: left;
+    font-size: 20px;
+  }
+
+  input[type="checkbox"] {
+    width: 12px;
+    height: 12px;
+    margin-left: 12px;
+  }
+
+  label {
+    padding-top: 2.5px;
+    padding-left: 5px;
+    font-size: 20px;
+  }
+
+  #popup {
+    background: rgba(207, 205, 205, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1;
+  }
+
+  #popup-window {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 22em;
+    height: fit-content;
+    text-align: center;
+    padding: 1px;
+    border: 2px solid crimson;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 10px #b4b5b6;
+    color: blue;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: white;
+    z-index: 1;
+  }
+
+  #popup:target {
+    display: block;
+  }
+
+  .blur {
+    backdrop-filter: blur(10px);
+  }
+
+  #add {
+    margin: 1.5em 0 0.5em 0;
+    color: red;
+    font-weight: 600;
+  }
+
+  input[type="text"] {
+    margin: 1em;
+    width: 70%;
+    padding: 5px;
+    border: 2px solid tomato;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    box-shadow: 1px 1px 5px grey;
+  }
+
+  input[type="text"]:focus {
+    border: 2px solid tomato;
+  }
+
+  .close:hover {
+    background: tomato;
+  }
+
+  .close {
+    display: inline-block;
+    border: none;
+    color: white;
+    border-radius: 15px;
+    padding: 5px 20px;
+    margin: 0.5em;
+    margin-bottom: 1.5em;
+    text-decoration: none;
+    background: tomato;
+    font-size: 12px;
+    cursor: pointer;
+  }
+}

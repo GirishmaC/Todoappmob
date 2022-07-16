@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo App Mob</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./mob-index.css" />
+  <link rel="stylesheet" href="./tab-index.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header id="header">
+      <span id="indexone">
+        <span class="tasks">Tasks</span>
+        <span class="lists">Lists</span>
+      </span>
+      <span id="indextwo">
+        <a href="#popup">
+          <span id="button">
+            <img src="./plus.png" alt="an img">
+          </span>
+        </a>
+        <a href="#popup"><span id="list">Add List</span></a>
+      </span>
+    </header>
+
+    <div id="popup" class="blur">
+      <div id="popup-window">
+        <span id="add">Add New Todo</span>
+        <input type="text" name="item">
+        <a href="#" class="close">ADD</a>
+      </div>
+    </div>
+
+    <main id="boxes">
+      <div class="box">
+        <span class="title"><a href="./sec.html" target="_self">Trip to Paris</a></span>
+        <hr class="box-hr">
+        <br>
+        <span class="crossedtext">Completed Task</span>
+        <br><br>
+
+        <form action="">
+          <input type="checkbox" name="task" id="task">
+          <label for="task">Pending Task</label>
+        </form>
+      </div>
+
+      <div class="box">
+        <span class="title">My Todo List</span>
+        <hr class="box-hr">
+        <br>
+        <span class="crossedtext">Completed Task</span>
+        <br><br>
+        <form action="">
+          <input type="checkbox" name="task" id="task">
+          <label for="task">Pending Task</label>
+        </form>
+      </div>
+
+      <div class="box">
+        <span class="title">My Todo List</span>
+        <hr class="box-hr">
+        <br>
+        <span class="crossedtext">Completed Task</span>
+        <br><br>
+        <form action="">
+          <input type="checkbox" name="task" id="task">
+          <label for="task">Pending Task</label>
+        </form>
+      </div>
+    </main>
+  </div>
+  <div class="tablet">
+    <main>
+
+      <header id="header-tablet">
+        <span id="tabindex">
+          <span id="tabtasks">Tasks</span>
+          <span id="lists-tablet">Lists</span>
+        </span>
+        <span id="indextwotab">
+          <a href="#popup-tablet">
+            <span id="add-button-tablet">
+              <img src="./plus.png" alt="an img">
+            </span>
+          </a>
+          <a href="#popup-tablet"><span id="list-tablet">Add List</span></a>
+        </span>
+      </header>
+
+      <section id="boxes-tablet">
+        <a href="./sec.html" target="_self">
+          <div class="box">
+            <p>Trip to Paris</p>
+          </div>
+        </a>
+        <div class="box">
+          <p>My Todo List 2</p>
+        </div>
+        <div class="box">
+          <p>My Todo List 3</p>
+        </div>
+        <div class="box">
+          <p>My Todo List 4</p>
+        </div>
+        <div class="box">
+          <p>My Todo List 5</p>
+        </div>
+      </section>
+
+      <div id="popup-tablet" class="blur">
+        <div id="popup-tablet-window">
+          <span id="todo-new">Add New Todo</span>
+          <input type="text" name="item">
+          <a href="#" class="close">ADD</a>
+        </div>
+      </div>
+    </main>
+  </div>
+  <div class="mobile">
+    <main>
+      <header id="header-mobile">
+        <span><span id="mobtasks">Tasks</span>
+          <span id="lists-mobile">Lists</span>
+        </span>
+
+        <a href="#popup-mobile" id="add-button-mobile">
+          <img src="./plus.png" alt="an img">
+        </a>
+      </header>
+      <section id="boxes-mobile">
+        <a href="./sec.html" target="_self">
+          <div class="box">
+            <p>Trip to Paris</p>
+          </div>
+        </a>
+        <div class="box">
+          <p>My Todo List 2</p>
+        </div>
+        <div class="box">
+          <p>My Todo List 3</p>
+        </div>
+        <div class="box">
+          <p>My Todo List 4</p>
+        </div>
+        <div class="box">
+          <p>My Todo List 5</p>
+        </div>
+      </section>
+
+      <div id="popup-mobile" class="blur">
+        <div id="popup-mobile-window">
+          <span id="todo-mob">Add New Todo</span>
+          <input type="text" name="item">
+          <a href="#" class="close">ADD</a>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
